@@ -18,6 +18,15 @@ Paese Capace aide une commune, un élu, un secrétaire de mairie ou un citoyen e
 - points de vigilance ;
 - calendrier avant dépôt.
 
+## Source officielle
+
+Le dispositif Territorii, Pieve è Paesi vivi est présenté par la Collectivité de Corse ici :
+
+https://www.isula.corsica/territorii
+
+Cette page est la référence officielle.  
+Paese Capace est seulement un outil d’aide à la formulation d’un pré-dossier.
+
 ## Deux chemins
 
 ### 1. Utilisateur à l’aise avec l’IA
