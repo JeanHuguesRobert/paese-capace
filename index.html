@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Paese Capace — Assistant de pré-dossier Territorii</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="Paese Capace aide bénévolement les petites communes corses à préparer un pré-dossier pour le dispositif Territorii, Pieve è Paesi vivi."
+  >
+
+  <style>
+    :root {
+      --bg: #fafafa;
+      --text: #1f2933;
+      --muted: #4b5563;
+      --border: #e5e7eb;
+      --card: #ffffff;
+      --dark: #111827;
+      --dark2: #374151;
+      --soft: #f3f4f6;
+      --warning-bg: #fff7ed;
+      --warning-border: #fed7aa;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 2rem;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    h1, h2, h3 {
+      line-height: 1.2;
+      color: var(--dark);
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.3rem;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    a {
+      color: var(--dark);
+      font-weight: 650;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.4rem;
+      margin: 1.4rem 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+
+    .warning {
+      background: var(--warning-bg);
+      border-color: var(--warning-border);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    @media (min-width: 760px) {
+      .grid.two {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    label {
+      display: block;
+      font-weight: 650;
+      margin-top: 1rem;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.75rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font: inherit;
+      margin-top: 0.3rem;
+      background: white;
+    }
+
+    textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+
+    button, .button {
+      display: inline-block;
+      margin-top: 1.2rem;
+      padding: 0.8rem 1rem;
+      border-radius: 8px;
+      border: none;
+      background: var(--dark);
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    button:hover, .button:hover {
+      opacity: 0.92;
+    }
+
+    .secondary {
+      background: var(--dark2);
+    }
+
+    .note {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .small {
+      font-size: 0.9rem;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      background: var(--soft);
+      border-radius: 10px;
+      padding: 1rem;
+      border: 1px solid var(--border);
+      overflow-x: auto;
+      max-height: 460px;
+    }
+
+    ul {
+      padding-left: 1.3rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.4rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Paese Capace</h1>
+    <p class="subtitle">
+      Assistant bénévole de pré-dossier pour les petites communes corses souhaitant répondre au dispositif
+      <strong>Territorii, Pieve è Paesi vivi</strong>.
+    </p>
+  </header>
+
+  <section class="card">
+    <h2>Objectif</h2>
+
+    <p>
+      Paese Capace aide une commune, un élu, un secrétaire de mairie ou un citoyen engagé
+      à transformer une idée locale en pré-dossier clair :
+      problème traité, projet envisagé, bénéficiaires, intérêt territorial,
+      compatibilité probable, pièces à réunir, points de vigilance et calendrier.
+    </p>
+
+    <p>
+      Source officielle du dispositif :
+      <a href="https://www.isula.corsica/territorii" target="_blank" rel="noopener">
+        https://www.isula.corsica/territorii
+      </a>
+    </p>
+
+    <a class="button secondary" href="https://www.isula.corsica/territorii" target="_blank" rel="noopener">
+      Consulter le dispositif officiel
+    </a>
+  </section>
+
+  <section class="card warning">
+    <h2>Cadre de l’initiative</h2>
+
+    <p>
+      Paese Capace est une offre d’accompagnement bénévole proposée sous l’égide de
+      <strong>l’Institut Mariani</strong>, émanation R&amp;D de l’association
+      <strong>C.O.R.S.I.C.A.</strong>
+    </p>
+
+    <p>
+      Les outils techniques sont mis gracieusement à disposition par la société
+      <strong>SAS FractaVolta</strong>.
+    </p>
+
+    <p class="note">
+      Paese Capace n’est ni une prestation commerciale, ni un service mandaté par la Collectivité de Corse.
+      Seule la Collectivité de Corse instruit les dossiers et confirme leur éligibilité.
+      Aucun dossier n’est transmis automatiquement à la Collectivité de Corse.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Deux chemins</h2>
+
+    <div class="grid two">
+      <div>
+        <h3>Option A — Vous êtes à l’aise avec l’IA</h3>
+        <p>
+          Copiez le prompt fourni ci-dessous dans votre agent IA préféré :
+          ChatGPT, Claude, Mistral ou autre.
+        </p>
+        <p class="note">
+          Cette option permet de produire immédiatement un premier pré-dossier à relire et compléter.
+        </p>
+      </div>
+
+      <div>
+        <h3>Option B — Vous préférez être accompagné</h3>
+        <p>
+          Remplissez le questionnaire. Votre messagerie préparera un courriel à envoyer à
+          <strong>contact@fractavolta.com</strong>.
+        </p>
+        <p class="note">
+          Cette option sert à qualifier la demande et à amorcer un échange bénévole.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Option A — Prompt à copier</h2>
+
+    <p>
+      Copiez le prompt ci-dessous, complétez les informations demandées, puis collez-le dans votre agent IA préféré.
+    </p>
+
+    <button onclick="copyPrompt()">Copier le prompt</button>
+
+    <pre id="promptText">Tu es un assistant de pré-dossier pour une commune corse souhaitant répondre au dispositif Territorii, Pieve è Paesi vivi.
+
+Source officielle :
+https://www.isula.corsica/territorii
+
+Cadre :
+Paese Capace est une offre d’accompagnement bénévole proposée sous l’égide de l’Institut Mariani, émanation R&amp;D de l’association C.O.R.S.I.C.A. Les outils techniques sont mis gracieusement à disposition par la société SAS FractaVolta.
+
+Ta mission est d’aider à transformer une idée de projet communal ou intercommunal en pré-dossier clair, structuré et prudent.
+
+Tu ne dois pas promettre l’éligibilité ni l’obtention d’une aide.
+
+Tu dois rappeler que seule la Collectivité de Corse instruit les dossiers et confirme leur éligibilité.
+
+Tu ne dois pas inventer de critères d’éligibilité. Si une information manque, tu dois indiquer qu’elle doit être vérifiée sur la page officielle ou auprès des services instructeurs.
+
+Tu dois distinguer :
+- les informations connues ;
+- les informations manquantes ;
+- les hypothèses ;
+- les points de vigilance ;
+- les pièces à réunir.
+
+Questions de départ :
+1. Commune :
+2. Population approximative :
+3. Commune seule ou groupement de communes :
+4. Problème concret à résoudre :
+5. Projet envisagé :
+6. Lieu concerné :
+7. Public bénéficiaire :
+8. Budget estimatif :
+9. État du projet :
+10. Travaux commencés ou non :
+11. Documents déjà disponibles :
+12. Urgence ou contrainte particulière :
+
+Format de sortie attendu :
+
+# Pré-dossier Territorii — [Commune]
+
+## 1. Résumé exécutif
+Rédiger en 10 lignes maximum.
+
+## 2. Problème territorial
+Décrire le besoin concret, sans emphase.
+
+## 3. Projet proposé
+Présenter le projet de manière opérationnelle.
+
+## 4. Bénéficiaires
+Identifier habitants, usagers, associations, élus, visiteurs, agriculteurs, jeunes, personnes âgées, etc.
+
+## 5. Intérêt territorial
+Expliquer pourquoi le projet dépasse une simple dépense ponctuelle.
+
+## 6. Compatibilité probable
+Indiquer si le projet semble relever plutôt :
+- du volet Paesi ;
+- du volet Pieve è Rughjoni ;
+- du Fonds Rughjoni ;
+- ou si l’information est insuffisante.
+
+## 7. Pièces à réunir
+Lister les pièces probables : délibération, plan de financement, devis, notice, calendrier, attestation de non-commencement, etc.
+
+## 8. Points de vigilance
+Signaler les risques : travaux déjà commencés, budget flou, maîtrise foncière, autorisations, cofinancements, portage juridique, calendrier.
+
+## 9. Questions à clarifier
+Lister les questions précises à poser à la commune ou aux services instructeurs.
+
+## 10. Proposition de calendrier
+Construire un rétroplanning jusqu’à la date limite de dépôt du 31 août 2026.
+
+## 11. Note préparatoire pour conseil municipal
+Rédiger une note courte et neutre pouvant servir de base à une discussion ou une délibération.</pre>
+  </section>
+
+  <section class="card">
+    <h2>Option B — Questionnaire d’accompagnement</h2>
+
+    <p>
+      Remplissez ce questionnaire. Il préparera automatiquement un courriel à envoyer à
+      <strong>contact@fractavolta.com</strong>.
+    </p>
+
+    <p class="note">
+      Votre navigateur ouvrira votre logiciel de messagerie. Vous pourrez relire et modifier le message avant envoi.
+    </p>
+
+    <form id="leadForm">
+      <label for="nom">Nom et fonction</label>
+      <input id="nom" name="nom" required placeholder="Ex. Marie Rossi, maire / secrétaire de mairie / conseiller municipal">
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required placeholder="adresse@email.fr">
+
+      <label for="telephone">Téléphone</label>
+      <input id="telephone" name="telephone" placeholder="Optionnel">
+
+      <label for="commune">Commune concernée</label>
+      <input id="commune" name="commune" required placeholder="Nom de la commune">
+
+      <label for="population">Population approximative</label>
+      <input id="population" name="population" placeholder="Ex. 450 habitants">
+
+      <label for="portage">Commune seule ou groupement ?</label>
+      <select id="portage" name="portage">
+        <option>Commune seule</option>
+        <option>Groupement de communes</option>
+        <option>Intercommunalité</option>
+        <option>À préciser</option>
+      </select>
+
+      <label for="probleme">Problème concret à résoudre</label>
+      <textarea id="probleme" name="probleme" required placeholder="Décrire le besoin réel : service manquant, bâtiment à réhabiliter, accès, eau, mobilité, numérique, patrimoine, etc."></textarea>
+
+      <label for="projet">Projet envisagé</label>
+      <textarea id="projet" name="projet" required placeholder="Décrire ce que la commune voudrait faire, même de manière approximative."></textarea>
+
+      <label for="lieu">Lieu concerné</label>
+      <input id="lieu" name="lieu" placeholder="Bâtiment, quartier, hameau, site, vallée, chemin...">
+
+      <label for="beneficiaires">Public bénéficiaire</label>
+      <textarea id="beneficiaires" name="beneficiaires" placeholder="Habitants, enfants, personnes âgées, associations, agriculteurs, visiteurs, commerçants, élus, etc."></textarea>
+
+      <label for="budget">Budget estimatif, même approximatif</label>
+      <input id="budget" name="budget" placeholder="Ex. 25 000 €, 80 000 €, inconnu...">
+
+      <label for="travaux">Les travaux ont-ils commencé ?</label>
+      <select id="travaux" name="travaux">
+        <option>Non</option>
+        <option>Oui</option>
+        <option>Je ne sais pas</option>
+      </select>
+
+      <label for="documents">Documents déjà disponibles</label>
+      <textarea id="documents" name="documents" placeholder="Devis, délibération, esquisse, étude, photos, note interne, plan de financement..."></textarea>
+
+      <label for="urgence">Urgence ou contrainte particulière</label>
+      <textarea id="urgence" name="urgence" placeholder="Échéance, danger, opportunité, contrainte administrative, état du bâtiment, pression locale..."></textarea>
+
+      <label for="consentement">Consentement</label>
+      <select id="consentement" name="consentement" required>
+        <option value="">Choisir une option</option>
+        <option>J’accepte d’être recontacté au sujet de cette demande.</option>
+      </select>
+
+      <button type="submit">Préparer le mail</button>
+    </form>
+  </section>
+
+  <section class="card">
+    <h2>Principe de transparence</h2>
+
+    <p>
+      Plus les besoins sont formulés tôt et clairement, plus les arbitrages deviennent visibles.
+    </p>
+
+    <p>
+      L’objectif n’est pas de contourner l’administration, mais de rendre les projets plus lisibles,
+      plus comparables et plus faciles à discuter.
+    </p>
+
+    <p class="note">
+      Paese Capace produit un amorçage. Le dossier officiel reste à vérifier, compléter et déposer
+      selon les règles de la Collectivité de Corse.
+    </p>
+  </section>
+
+  <footer>
+    Paese Capace est une offre d’accompagnement bénévole placée sous l’égide de l’Institut Mariani,
+    émanation R&amp;D de l’association C.O.R.S.I.C.A.
+    Les outils techniques sont mis gracieusement à disposition par la société SAS FractaVolta.
+    Aucun dossier n’est transmis automatiquement à la Collectivité de Corse.
+  </footer>
+
+<script>
+function copyPrompt() {
+  const text = document.getElementById("promptText").innerText;
+
+  if (!navigator.clipboard) {
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("Prompt copié.");
+    return;
+  }
+
+  navigator.clipboard.writeText(text).then(() => {
+    alert("Prompt copié.");
+  }).catch(() => {
+    alert("La copie automatique a échoué. Vous pouvez sélectionner le prompt manuellement.");
+  });
+}
+
+document.getElementById("leadForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const data = new FormData(event.target);
+  const get = (name) => data.get(name) || "";
+
+  const subject = `[Paese Capace] Pré-dossier Territorii — ${get("commune")}`;
+
+  const body =
+`Demande Paese Capace — Pré-dossier Territorii
+
+Cadre :
+Paese Capace est une offre d’accompagnement bénévole proposée sous l’égide de l’Institut Mariani, émanation R&D de l’association C.O.R.S.I.C.A. Les outils techniques sont mis gracieusement à disposition par la société SAS FractaVolta.
+
+Source officielle :
+https://www.isula.corsica/territorii
+
+Nom et fonction :
+${get("nom")}
+
+Email :
+${get("email")}
+
+Téléphone :
+${get("telephone")}
+
+Commune concernée :
+${get("commune")}
+
+Population approximative :
+${get("population")}
+
+Portage :
+${get("portage")}
+
+Problème concret à résoudre :
+${get("probleme")}
+
+Projet envisagé :
+${get("projet")}
+
+Lieu concerné :
+${get("lieu")}
+
+Public bénéficiaire :
+${get("beneficiaires")}
+
+Budget estimatif :
+${get("budget")}
+
+Travaux commencés :
+${get("travaux")}
+
+Documents déjà disponibles :
+${get("documents")}
+
+Urgence ou contrainte particulière :
+${get("urgence")}
+
+Consentement :
+${get("consentement")}
+
+Note :
+Cette demande ne constitue pas un dépôt officiel auprès de la Collectivité de Corse.
+Seule la Collectivité de Corse instruit les dossiers et confirme leur éligibilité.
+`;
+
+  const mailto =
+    `mailto:contact@fractavolta.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  window.location.href = mailto;
+});
+</script>
+
+</body>
+</html>
