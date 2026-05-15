@@ -18,6 +18,16 @@ Paese Capace aide une commune, un élu, un secrétaire de mairie ou un citoyen e
 - points de vigilance ;
 - calendrier avant dépôt.
 
+## Cadre de l’initiative
+
+Paese Capace est une offre d’accompagnement bénévole proposée sous l’égide de l’Institut Mariani, émanation R&D de l’association C.O.R.S.I.C.A.
+
+Les outils techniques sont mis gracieusement à disposition par la société SAS FractaVolta.
+
+Il ne s’agit pas d’une prestation commerciale, ni d’un service mandaté par la Collectivité de Corse.
+
+L’objectif est d’aider les petites communes à formuler plus clairement leurs projets, afin de faciliter leur compréhension, leur discussion et leur éventuelle instruction par les services compétents.
+
 ## Source officielle
 
 Le dispositif Territorii, Pieve è Paesi vivi est présenté par la Collectivité de Corse ici :
