@@ -1,9 +1,37 @@
+---
+title: "Paese Capace — assistant de pré-dossier territorial"
+description: "Prototype d'aide à la formulation de projets communaux ; déploiement public non encore confirmé."
+author: unknown
+affiliation: "Institut Mariani / C.O.R.S.I.C.A."
+date: null
+last_modified_at: "2026-11-13"
+status: working-paper
+language: fr
+license: unknown
+document_role: project
+document_kind: project-readme
+visibility: public
+lifecycle_state: working
+canonical_url: https://github.com/JeanHuguesRobert/paese-capace/blob/main/README.md
+update_policy: UP-DEFAULT-REVIEWED
+provenance:
+  origin_type: repository
+  origin_repository: JeanHuguesRobert/paese-capace
+  origin_ref: unknown
+  origin_date: unknown
+  derived_from: []
+review:
+  status: unreviewed
+  reviewed_by: []
+---
+
 # Paese Capace
 
 Assistant de pré-dossier pour les petites communes corses souhaitant répondre aux appels à projets du dispositif **Territorii, Pieve è Paesi vivi**.
 
-Adresse prévue :  
-http://paesecapace.fractavolta.com
+**Site public : non disponible au contrôle du 13 novembre 2026.** Le domaine envisagé `paesecapace.fractavolta.com` ne résout pas encore en DNS. Ne pas le présenter comme une application en service.
+
+**Suivi du déploiement et de la recette :** [paese-capace #1](https://github.com/JeanHuguesRobert/paese-capace/issues/1).
 
 ## Objet
 
@@ -45,11 +73,7 @@ L’utilisateur copie le prompt fourni dans `prompt.md`, puis le colle dans son 
 
 ### 2. Utilisateur souhaitant être accompagné
 
-L’utilisateur remplit un formulaire simple. Les informations sont envoyées à :
-
-contact@fractavolta.com
-
-Le formulaire sert à qualifier la demande et à amorcer un échange.
+**Parcours envisagé, non vérifié en production :** l’utilisateur remplirait un formulaire simple pour qualifier la demande et amorcer un échange. Le fonctionnement réel du formulaire, ses garanties de confidentialité et tout éventuel acheminement de messages restent à vérifier avant leur annonce comme disponibles (voir [issue #1](https://github.com/JeanHuguesRobert/paese-capace/issues/1)).
 
 ## Principe
 
@@ -61,7 +85,7 @@ Plus les besoins sont formulés tôt et clairement, plus les arbitrages devienne
 
 ## État
 
-MVP statique.
+MVP statique décrit dans ce dépôt ; accessibilité publique non établie.
 
 Aucune base de données au départ.  
 Le CRM viendra ensuite.
